@@ -1,0 +1,13 @@
+--cpu Cortex-M0+
+".\objects\dac.o"
+".\objects\i2c.o"
+".\objects\klaw.o"
+".\objects\lcd1602.o"
+".\objects\main.o"
+".\objects\tsi.o"
+".\objects\startup_mkl05z4.o"
+".\objects\system_mkl05z4.o"
+--strict --scatter ".\Objects\DAC_DDS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\DAC_DDS.map" -o .\Objects\DAC_DDS.axf
